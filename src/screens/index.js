@@ -14,7 +14,7 @@ export default createBottomTabNavigator({
   },
 }, {
   navigationOptions: ({ navigation }) => ({
-    tabBarIcon: ({ focused, horizontal, tintColor }) => {
+    tabBarIcon: ({ focused, tintColor }) => {
       const { routeName } = navigation.state;
       let iconName;
       if (routeName === 'Screen1') {
@@ -23,7 +23,7 @@ export default createBottomTabNavigator({
       if (routeName === 'Screen2') {
         iconName = `ios-close-circle${focused ? '' : '-outline'}`;
       }
-      return <Ionicons name={iconName} size={25} color={tintColor} />
+      return <Ionicons name={iconName} size={25} color={tintColor} />;
     },
   }),
 });
