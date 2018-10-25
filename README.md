@@ -1,17 +1,16 @@
-# react-native-basic-settings
+# react-native-boilerplate
 
-This is a simple React-Native boilerplate with basic settings.
+This is a simple React-Native boilerplate with some basic settings.
 
 ## Getting Started
 
-1. `Fork` and `Clone`
-2. In package.json, change `name` to `your-app-name`
-3. `yarn`
-4. `yarn start`
-
-### (option) Use React Native Debugger to debug redux
 1. install [React Native Debugger](https://github.com/jhen0409/react-native-debugger)
-2. Turn on `Debug JS Remotely` on your device
+2. `fork` and `clone`
+3. In package.json, change `name` to `your-app-name`
+4. `yarn`
+5. `yarn start`
+6. Turn on `Debug JS Remotely` on your device
+
 
 ## Features
 
