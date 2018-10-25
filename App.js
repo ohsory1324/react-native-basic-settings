@@ -1,19 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
 
 import reducers from './src/reducers';
 
 import Navigator from './src/screens';
 
-const store = createStore(reducers);
+const store = createStore(reducers, composeWithDevTools());
 
-export default class App extends Component {
-  render() {
-    return (
-      <Provider store={store}>
-        <Navigator />
-      </Provider>
-    );
-  }
-}
+export default () => (
+  <Provider store={store}>
+    <Navigator />
+  </Provider>
+);
